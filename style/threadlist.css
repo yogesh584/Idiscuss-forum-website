@@ -1,0 +1,125 @@
+#jumbodrone {
+  width: 70%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background: rgb(16, 212, 65);
+  border-radius: 10px;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+#jumbodrone h2 {
+  margin: 10px 0px;
+  font-size: 30px;
+  font-family: Calibri;
+  font-weight: 100;
+}
+
+#jumbodrone p:nth-child(3) {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.questions h2 {
+  display: inline;
+  position: relative;
+  left: 43%;
+  transform: translateX(-50%);
+}
+.question {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.question:last-child {
+  margin-bottom: 10px;
+}
+.question .user-information {
+  display: flex;
+}
+
+.question img {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.question .problem {
+  margin-left: 50px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.question .problem a {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 2px solid rgb(14, 190, 93);
+  color: rgb(14, 190, 93);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.question .problem a:hover {
+  background: rgb(14, 190, 93);
+  color: #111;
+}
+#askingQuestion {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 20px;
+  width: 70%;
+  margin: 15px auto;
+}
+#askingQuestion #askingQuestionform {
+  display: flex;
+  flex-direction: column;
+}
+#askingQuestion input,
+#askingQuestion textarea {
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding-left: 10px;
+  outline-color: rgb(14, 130, 197);
+}
+#askingQuestion textarea {
+  height: 100px;
+  padding-top: 10px;
+}
+#askingQuestion label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#askingQuestion #questionSubmit {
+  width: 150px;
+  padding-left: 0px;
+  font-size: 20px;
+  margin-top: 10px;
+  border: 2px solid rgb(14, 190, 93);
+  background: transparent;
+  color: rgb(14, 190, 93);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#askingQuestion #questionSubmit:hover {
+  color: #333;
+  background: rgb(14, 190, 93);
+}
+footer img {
+  display: none;
+}

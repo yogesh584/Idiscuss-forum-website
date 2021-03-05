@@ -1,0 +1,101 @@
+.direction{
+    display: grid;
+    justify-content: center;
+    background: #f2f2f2;
+}
+.direction > h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 470px;
+    max-width: 350px;
+    margin: 20px 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s;
+    background: #fff;
+}
+
+.card .img {
+    height: 200px;
+    width: 350px;
+}
+
+.card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .top-text {
+    padding: 5px;
+}
+
+.card .top-text .name {
+    font-size: 25px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.card .top-text p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+}
+
+.card .bottom-text {
+    padding: 0px 20px 10px 20px;
+    margin-top: 8px;
+    transition: 0.2s;
+}
+
+
+.card .bottom-text .text {
+    text-align: justify;
+}
+
+.card .bottom-text .btn {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+.card .bottom-text .btn a {
+    text-decoration: none;
+    background: #e74c3c;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.card .bottom-text .btn a:hover {
+    transform: scale(0.9);
+}
+@media (max-width: 1163px){
+    .card .img {
+        width: 280px;
+    }
+}
+@media screen and (max-width: 978px) {
+    .category {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .card{
+        max-width: 700px;
+        margin: 20px 0px;
+    }
+    .card .img {
+        width: 100%;
+    }
+}
